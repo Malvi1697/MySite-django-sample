@@ -4,9 +4,9 @@ from visits.models import PageVisit
 
 def home_page_view(request):
     PageVisit.objects.create(path=request.path)
+    my_page = 'Vseticek.com'
     qs_total = PageVisit.objects.all()
     qs_count = PageVisit.objects.filter(path=request.path)
-    my_page = 'Vseticek.com'
 
     context = {
         'page_title': my_page,
