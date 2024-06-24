@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% include 'snippets/welcome-user-msg.html' %} <br />
+  you're: <br />
+  {{ request.user }} <br />
+  {{ request.method }} <br />
+  Page visits total: {{ page_visits_total }} <br />
+  Page visits: {{ page_visits }} <br />
+{% endblock %}
