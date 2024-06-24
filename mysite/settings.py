@@ -34,9 +34,6 @@ if DEBUG:
     ]
 
 
-
-
-
 # Application definition
 
 INSTALLED_APPS = [
