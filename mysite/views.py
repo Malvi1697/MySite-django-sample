@@ -2,7 +2,7 @@ from django.shortcuts import render
 from visits.models import PageVisit
 
 
-def home_page_view(request):
+def home_view(request):
     PageVisit.objects.create(path=request.path)
     my_page = 'Vseticek.com'
     qs_total = PageVisit.objects.all()
